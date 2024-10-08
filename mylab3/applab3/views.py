@@ -92,7 +92,7 @@ def analyze_sentiment(request):
         if not text:
             return HttpResponse("<h2>Vui lòng nhập văn bản để phân tích.</h2>")
 
-        data = loadCsv("/Users/nguyenngocbaotram/mylab3/Data/Education.csv")
+        data = loadCsv("/Users/nguyenngocbaotram/Documents/HM&UD/LAB3-MachineLearning/mylab3/Data/Education.csv")
         if data.empty:
             return HttpResponse("<h2>Không thể tải dữ liệu. Vui lòng kiểm tra file CSV.</h2>")
         
